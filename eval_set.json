@@ -1,0 +1,92 @@
+[
+  {
+    "query": "What is the boxed warning for RINVOQ regarding serious infections?",
+    "relevant_ids": [13,4,1,26],
+    "reference_answer": "Patients treated with RINVOQ/RINVOQ LQ are at increased risk for developing serious infections that may lead to hospitalization or death [see Warnings and Precautions, Adverse Reactions]. Most patients who developed these infections were taking concomitant immunosuppressants such as methotrexate or corticosteroids."
+  },
+  {
+    "query": "What is the boxed warning for RINVOQ regarding malignancy?",
+    "relevant_ids": [1,26,4,13],
+    "reference_answer": "Lymphoma and other malignancies have been observed in patients treated with RINVOQ. In RA patients treated with another JAK inhibitor, a higher rate of malignancies (excluding non-melanoma skin cancer (NMSC)) was observed when compared with TNF blockers. Patients who are current or past smokers are at additional increased risk [see Warnings and Precautions]. "
+  },
+  {
+    "query": "What is the boxed warning for RINVOQ regarding thrombosis?",
+    "relevant_ids": [79,5,76,15],
+    "reference_answer": "Thromboses, including deep venous thrombosis, pulmonary embolism, and arterial thrombosis, have occurred in patients treated for inflammatory conditions with JAK inhibitors, including RINVOQ. Many of these adverse events were serious and some resulted in death. In RA patients 50 years of age and older with at least one cardiovascular risk factor treated with another JAK inhibitor, a higher rate of thrombosis was observed when compared with TNF blockers. Avoid RINVOQ/RINVOQ LQ in patients at risk. Patients with symptoms of thrombosis should discontinue RINVOQ/RINVOQ LQ and be promptly evaluated "
+  },
+  {
+    "query": "What is RINVOQ indicated for in rheumatoid arthritis?",
+    "relevant_ids": [80,18,79,73],
+    "reference_answer": "RINVOQ is indicated for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to one or more TNF blockers. Limitations of Use: RINVOQ is not recommended for use in combination with other JAK inhibitors, biologic disease-modifying antirheumatic drugs (DMARDs), or with potent immunosuppressants such as azathioprine and cyclosporine. "
+  },
+  {
+    "query": "What is RINVOQ indicated for in psoriatic arthritis?",
+    "relevant_ids": [49,34,80,8],
+    "reference_answer": "RINVOQ/RINVOQ LQ is indicated for the treatment of adults and pediatric patients 2 years of age and older with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers. Limitations of Use: RINVOQ/RINVOQ LQ is not recommended for use in combination with other JAK inhibitors, biologic DMARDs, or with potent immunosuppressants such as azathioprine and cyclosporine. "
+  },
+  {
+    "query": "What is the recommended dosage of RINVOQ in Ulcerative Colitis?",
+    "relevant_ids": [9,2,11],
+    "reference_answer": "Adult Patients: Induction The recommended induction dosage of RINVOQ is 45 mg once daily for 8 weeks.  Adult Patients: Maintenance The recommended dosage of RINVOQ for maintenance treatment is 15 mg once daily.  A dosage of 30 mg once daily may be considered for patients with refractory, severe or extensive disease. Discontinue RINVOQ if an adequate therapeutic response is not achieved with the 30 mg dosage. Use the lowest effective dosage needed to maintain response."
+  },
+  {
+    "query": "What is the warnings and precautions for RINVOQ regarding Tuberculosis?",
+    "relevant_ids": [1,4,13,78],
+    "reference_answer": "Evaluate and test patients for latent and active tuberculosis (TB) infection prior to administration of RINVOQ/RINVOQ LQ. Patients with latent TB should be treated with standard antimycobacterial therapy before initiating RINVOQ/RINVOQ LQ. RINVOQ/RINVOQ LQ should not be given to patients with active TB. Consider anti-TB therapy prior to initiation of RINVOQ/RINVOQ LQ in patients with previously untreated latent TB or active TB in whom an adequate course of treatment cannot be confirmed, and for patients with a negative test for latent TB but who have risk factors for TB infection.  Consultation with a physician with expertise in the treatment of TB is recommended to aid in the decision about whether initiating anti-TB therapy is appropriate for an individual patient.  During RINVOQ/RINVOQ LQ use, monitor patients for the development of signs and symptoms of TB, including patients who tested negative for latent TB infection prior to initiating therapy. "
+  },
+  {
+    "query": "What dosage adjustments are required for hepatic impairment?",
+    "relevant_ids": [12,2,11,2],
+    "reference_answer": "The use of RINVOQ/RINVOQ LQ has not been studied in patients with severe hepatic impairment (Child Pugh C), and is therefore not recommended For patients with rheumatoid arthritis, psoriatic arthritis, atopic dermatitis, ankylosing spondylitis, non-radiographic axial spondyloarthritis, pJIA, or giant cell arteritis, no dosage adjustment is needed in patients with mild (Child Pugh A) or moderate (Child Pugh B) hepatic impairment."
+  },
+  {
+    "query": "What are the Allergic reactions of RINVOQ?",
+    "relevant_ids": [24,82,30,23],
+    "reference_answer": "Symptoms such as rash (hives), trouble breathing, feeling faint or dizzy, or swelling of your lips, tongue, or throat, that may mean you are having an allergic reaction have been seen in people taking RINVOQ. Some of these reactions were serious. If any of these symptoms occur during treatment with RINVOQ/RINVOQ LQ, stop taking RINVOQ/RINVOQ LQ and get emergency medical help right away. "
+  },
+  {
+    "query": "How should I take RINVOQ/RINVOQ LQ?",
+    "relevant_ids": [80,78,83,1],
+    "reference_answer": "Take RINVOQ/RINVOQ LQ exactly as your healthcare provider tells you to use it. Take RINVOQ LQ 2 times a day with or without food. Take RINVOQ tablets 1 time a day with or without food. Swallow RINVOQ tablets whole. Do not split, crush, or chew the tablets. RINVOQ LQ is not the same as RINVOQ tablets. Do not switch between RINVOQ LQ and RINVOQ tablets unless the change has been made by your healthcare provider.  If you take too much RINVOQ/RINVOQ LQ, call your healthcare provider or Poison Help line at 1-800-222-1222, or go to the nearest hospital emergency room right away. "
+  },
+  {
+    "query": "What should I avoid while taking RINVOQ/RINVOQ LQ?",
+    "relevant_ids": [80,78,78,1],
+    "reference_answer": "Avoid food or drink containing grapefruit during treatment with RINVOQ/RINVOQ LQ. Eating grapefruit or drinking grapefruit juice may increase the risk of side effects. "
+  },
+  {
+    "query": "How should I store RINVOQ/RINVOQ LQ?",
+    "relevant_ids": [80,89,83,78],
+    "reference_answer": "Store RINVOQ tablets between 36°F to 77°F (2°C to 25°C).Store RINVOQ tablets in the original bottle to protect from moisture. Store RINVOQ LQ between 36°F to 86°F (2°C to 30°C).  Throw away (discard) remaining RINVOQ LQ 60 days after opening the bottle. Keep RINVOQ/RINVOQ LQ and all medicines out of the reach of children."
+  },
+  {
+    "query": "What is the most important information I should know about HUMIRA?",
+    "relevant_ids": [95,59,34,63],
+    "reference_answer": "HUMIRA is a medicine that affects your immune system. HUMIRA can lower the ability of your immune system to fight infections. Serious infections have happened in people taking HUMIRA. These serious infections include tuberculosis (TB) and infections caused by viruses, fungi or bacteria that have spread throughout the body. Some people have died from these infections. Your doctor should test you for TB before starting HUMIRA. Your doctor should check you closely for signs and symptoms of TB during treatment with HUMIRA. You should not start taking HUMIRA if you have any kind of infection unless your doctor says it is okay.  "
+  },
+  {
+    "query": "How should I store HUMIRA?",
+    "relevant_ids": [105,81,80,88],
+    "reference_answer": "Store HUMIRA in the refrigerator at 36ºF to 46ºF (2ºC to 8ºC). Store HUMIRA in the original carton until use to protect it from light.  Do not freeze HUMIRA. Do not use HUMIRA if frozen, even if it has been thawed.  Refrigerated HUMIRA may be used until the expiration date printed on the HUMIRA carton, dose tray, Pen or prefilled syringe. Do not use HUMIRA after the expiration date.  If needed, for example when you are traveling, you may also store HUMIRA at room temperature up to 77°F (25°C) for up to 14 days. Store HUMIRA in the original carton until use to protect it from light.Throw away HUMIRA if it has been kept at room temperature and not been used within 14 days. Record the date you first remove HUMIRA from the refrigerator in the spaces provided on the carton and dose tray. Do not store HUMIRA in extreme heat or cold. Do not use a Pen or prefilled syringe if the liquid is cloudy, discolored, or has flakes or particles in it. Do not drop or crush HUMIRA. The prefilled syringe is glass. Keep HUMIRA, injection supplies, and all other medicines out of the reach of children. "
+  },
+  {
+    "query":"General information about the safe and effective use of HUMIRA.",
+    "relevant_ids": [106,54,14,63],
+    "reference_answer":"Medicines are sometimes prescribed for purposes other than those listed in a Medication Guide. Do not use HUMIRA for a condition for which it was not prescribed. Do not give HUMIRA to other people, even if they have the same condition. It may harm them.  This Medication Guide summarizes the most important information about HUMIRA. If you would like more information, talk with your doctor. You can ask your pharmacist or doctor for information about HUMIRA that is written for health professionals."
+  },
+  {
+    "query":"Recommended Dosage of SKYRIZI for Plaque Psoriasis?",
+    "relevant_ids":[4,3,1,26],
+    "reference_answer":"The recommended dosage is 150 mg administered by subcutaneous injection at Week 0, Week 4, and every 12 weeks thereafter."
+  },
+  {
+    "query":"What is the warnings and precautions for SKYRIZI regarding infections?",
+    "relevant_ids":[37,38,9,8],
+    "reference_answer":"SKYRIZI may increase the risk of infections. Treatment with SKYRIZI should not be initiated in patients with any clinically important active infection until the infection resolves or is adequately treated. In patients with a chronic infection or a history of recurrent infection, consider the risks and benefits prior to prescribing SKYRIZI. Instruct patients to seek medical advice if signs or symptoms of clinically important infection occur. If a patient develops such an infection or is not responding to standard therapy, monitor the patient closely and do not administer SKYRIZI until the infection resolves."
+  },
+  {
+    "query":"What are the ingredients in SKYRIZI?",
+    "relevant_ids":[40,53,59,1],
+    "reference_answer":"Active ingredient: risankizumab-rzaa. SKYRIZI 90 mg/mL inactive ingredients: polysorbate 20, sodium succinate, sorbitol, succinic acid, and Water for Injection, USP. SKYRIZI 150 mg/mL, 180 mg/1.2 mL, 360 mg/2.4 mL, and 600 mg/ 10 mL inactive ingredients: glacial acetic acid, polysorbate 20, sodium acetate, trehalose, and Water for Injection, USP. "
+  }
+]

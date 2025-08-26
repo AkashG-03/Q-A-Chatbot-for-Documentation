@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuraAI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login/Register Screen -->
+        <div id="auth-screen" class="auth-container">
+            <div class="auth-form">
+                <h1>CuraAI</h1>
+                
+                <!-- Role Selection Screen -->
+                <div id="role-selection" class="form-section">
+                    <h2>Welcome! Choose Your Account Type</h2>
+                    <div class="role-buttons">
+                        <button type="button" class="role-btn general-btn" id="generalUserBtn">
+                            <div class="role-icon">👤</div>
+                            <div class="role-title">General User</div>
+                            <div class="role-desc">Ask questions about medical information</div>
+                        </button>
+                        <button type="button" class="role-btn professional-btn" id="professionalUserBtn">
+                            <div class="role-icon">👨‍⚕️</div>
+                            <div class="role-title">Medical Professional</div>
+                            <div class="role-desc">Upload documents & Ask questions</div>
+                        </button>
+                    </div>
+                    <p>Already have an account? <a href="#" id="showLoginLink">Login here</a></p>
+                </div>
+
+                <!-- Login Form -->
+                <div id="login-form" class="form-section" style="display: none;">
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <input type="email" id="loginEmail" placeholder="Email" required>
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div class="form-links">
+                        <p>Don't have an account? <a href="#" id="showRoleSelectionFromLogin">Register here</a></p>
+                    </div>
+                </div>
+
+                <!-- General User Register Form -->
+                <div id="general-register-form" class="form-section" style="display: none;">
+                    <h2>👤 Register as General User</h2>
+                    <form id="generalRegisterForm">
+                        <input type="text" id="generalFullName" placeholder="Full Name" required>
+                        <input type="email" id="generalEmail" placeholder="Email" required>
+                        <input type="password" id="generalPassword" placeholder="Password" minlength="6" required>
+                        <button type="submit">Register</button>
+                    </form>
+                    <div class="form-links">
+                        <p>Want to register as a medical professional? <a href="#" id="switchToProfessional">Click here</a></p>
+                        <p>Already have an account? <a href="#" id="showLoginFromGeneral">Login here</a></p>
+                    </div>
+                </div>
+
+                <!-- Professional User Register Form -->
+                <div id="professional-register-form" class="form-section" style="display: none;">
+                    <h2>👨‍⚕️ Register as Medical Professional</h2>
+                    <div class="professional-info">
+                        <p><strong>Note:</strong> Your medical license will be verified and an OTP will be sent to your mobile number.</p>
+                    </div>
+                    <form id="professionalRegisterForm">
+                        <input type="text" id="professionalLegalNo" placeholder="Medical License Number (e.g., MED001)" required>
+                        <input type="tel" id="professionalPhone" placeholder="Phone Number (e.g., 9876543210)" required>
+                        <input type="email" id="professionalEmail" placeholder="Email" required>
+                        <input type="password" id="professionalPassword" placeholder="Password" minlength="6" required>
+                        <button type="submit">Verify & Send OTP</button>
+                    </form>
+                    <div class="form-links">
+                        <p>Not a medical professional? <a href="#" id="switchToGeneral">Register as General User</a></p>
+                        <p>Already have an account? <a href="#" id="showLoginFromProfessional">Login here</a></p>
+                    </div>
+                </div>
+
+                <!-- OTP Verification Form -->
+                <div id="otp-verification-form" class="form-section" style="display: none;">
+                    <h2>Verify Your Mobile Number</h2>
+                    <div class="otp-info">
+                        <p>Enter the 6-digit OTP sent to <strong id="otpPhoneDisplay"></strong></p>
+                        <p class="otp-timer">OTP expires in: <span id="otpTimer">5:00</span></p>
+                    </div>
+                    <form id="otpVerificationForm">
+                        <div class="otp-input-container">
+                            <input type="text" id="otpCode" placeholder="Enter 6-digit OTP" maxlength="6" required>
+                        </div>
+                        <button type="submit" id="verifyOtpBtn">Verify OTP</button>
+                    </form>
+                    <div class="form-links">
+                        <p>Didn't receive OTP? <button type="button" id="resendOtpBtn" class="link-btn">Resend OTP</button></p>
+                        <p><a href="#" id="backToProfessionalRegister">← Back to Registration</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Interface -->
+        <div id="chat-screen" class="chat-container" style="display: none;">
+            <!-- Header -->
+            <div class="header">
+                <h1>CuraAI</h1>
+                <div class="user-info">
+                    <div class="user-details">
+                        <span id="userName">Dr. Example</span>
+                        <span id="userRole" class="user-role">Professional</span>
+                    </div>
+                    <button id="logoutBtn">Logout</button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- File Upload Section -->
+                    <div class="upload-section" id="uploadSection">
+                        <h3>📄 Upload PDF</h3>
+                        <div class="upload-area" id="uploadArea">
+                            <p>📁 Drag & drop PDF files here<br>or click to browse</p>
+                            <input type="file" id="fileInput" accept=".pdf" multiple style="display: none;">
+                        </div>
+                        <div id="uploadStatus"></div>
+                    </div>
+
+                    <!-- Role Info Section (for general users) -->
+                    <div class="role-info-section" id="roleInfoSection" style="display: none;">
+                        <div class="role-info">
+                            <h3>👤 General User</h3>
+                            <p>You can ask questions about medical information. Only medical professionals can upload documents.</p>
+                            <div class="upgrade-prompt">
+                                <p>Are you a medical professional?</p>
+                                <button id="upgradeBtn" class="upgrade-btn">Register as Professional</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sessions List -->
+                    <div class="sessions-section">
+                        <div class="sessions-header">
+                            <h3>Chat Sessions</h3>
+                            <button id="newSessionBtn">+ New</button>
+                        </div>
+                        <div id="sessionsList" class="sessions-list">
+                            <!-- Sessions will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Area -->
+                <div class="chat-area">
+                    <div id="messagesContainer" class="messages-container">
+                        <div class="welcome-message">
+                            <h2>Welcome to CuraAI</h2>
+                            <p id="welcomeText">Ask questions about medical information from uploaded documents.</p>
+                        </div>
+                    </div>
+
+                    <!-- Input Area -->
+                    <div class="input-area">
+                        <div class="input-container">
+                            <textarea id="questionInput" placeholder="Ask a medical question..." rows="1"></textarea>
+                            <button id="sendBtn" disabled>Send</button>
+                        </div>
+                        <div class="input-info">
+                            <span id="sessionInfo"></span>
+                            <span id="indexStatus">Upload PDFs to get started</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Messages -->
+    <div id="toast" class="toast"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
