@@ -143,6 +143,24 @@ Medical-RAG-Chatbot/
 
 > The exact structure may vary depending on the current version of the project.
 
+## My Role
+
+### Team Lead and Developer
+
+I worked on the project as a **Team Lead and Developer**, contributing to both the technical implementation and overall project coordination.
+
+My responsibilities included:
+
+- Coordinating the development team and managing the overall implementation of the project.
+- Designing and implementing the **authentication and authorization system**, including JWT-based authentication, role-based access control, password hashing, and OTP verification.
+- Working on **PostgreSQL database management**, including database models, relationships, session management, and data persistence using SQLAlchemy.
+- Implementing **PDF table extraction and parsing** to ensure structured information from medical documents could be incorporated into the RAG pipeline.
+- Developing **warning and contraindication detection/parsing**, including identifying important medical warnings and highlighting relevant information in generated responses.
+- Contributing to the integration of the document-processing, RAG, authentication, and database components.
+- Debugging and resolving integration issues across the backend and RAG pipeline.
+- Coordinating development tasks, reviewing implementation progress, and helping team members resolve technical issues.
+- Contributing to the overall system design, testing, and refinement of the application.
+- 
 ##  Prerequisites
 
 Before running the application, make sure you have:
