@@ -160,7 +160,7 @@ My responsibilities included:
 - Debugging and resolving integration issues across the backend and RAG pipeline.
 - Coordinating development tasks, reviewing implementation progress, and helping team members resolve technical issues.
 - Contributing to the overall system design, testing, and refinement of the application.
-- 
+  
 ##  Prerequisites
 
 Before running the application, make sure you have:
